@@ -1,0 +1,83 @@
+Weapon Ammo List
+================
+| Weapon Name             | Ammo Name       |Type| Max |
+|------------------------------------------------------|
+| 'weapon_medkit'         | 'health'        |  1 | 100 |
+|------------------------------------------------------|
+| 'weapon_9mmhandgun'     | '9mm'           |  2 | 250 |
+| 'weapon_9mmAR'          | '9mm'           |  2 | 250 |
+| 'weapon_uzi'            | '9mm'           |  2 | 250 |
+|------------------------------------------------------|
+| 'weapon_357'            | '357'           |  3 |  36 |
+| 'weapon_eagle'          | '357'           |  3 |  36 |
+|------------------------------------------------------|
+| 'weapon_shotgun'        | 'buckshot'      |  4 | 125 |
+|------------------------------------------------------|
+| 'weapon_crossbow'       | 'bolts'         |  5 |  50 |
+|------------------------------------------------------|
+| 'weapon_m16'            | '556'           |  6 | 600 |
+| 'weapon_m249'           | '556'           |  6 | 600 |
+| 'weapon_minigun'        | '556'           |  6 | 600 |
+|------------------------------------------------------|
+| 'weapon_m16' (2nd ammo) | 'ARgrenades'    |  7 |  10 |
+|------------------------------------------------------|
+| 'weapon_rpg'            | 'rockets'       |  8 |   5 |
+|------------------------------------------------------|
+| 'weapon_displacer'      | 'uranium'       |  9 | 100 |
+| 'weapon_egon'           | 'uranium'       |  9 | 100 |
+| 'weapon_gauss'          | 'uranium'       |  9 | 100 |
+|------------------------------------------------------|
+| 'weapon_hornetgun'      | 'Hornets'       | 10 | 100 |
+|------------------------------------------------------|
+| 'weapon_handgrenade'    | 'Hand Grenade'  | 11 |  10 |
+|------------------------------------------------------|
+| 'weapon_satchel'        | 'Satchel Charge'| 12 |   5 |
+|------------------------------------------------------|
+| 'weapon_tripmine'       | 'Trip Mine'     | 13 |   5 |
+|------------------------------------------------------|
+| 'weapon_snark'          | 'Snarks'        | 14 |  15 |
+|------------------------------------------------------|
+| 'weapon_sniperrifle'    | 'm40a1'         | 15 |  15 |
+|------------------------------------------------------|
+| 'weapon_sporelauncher'  | 'sporeclip'     | 16 |  30 |
+|------------------------------------------------------|
+| 'weapon_shockrifle'     | 'shock charges' | 17 | 100 |
+|------------------------------------------------------|
+
+Notes:
+ - Weapon 'weapon_clock'  creates in SC 5.20 a Weapon 'weapon_9mmhandgun'
+ - Weapon 'weapon_mp5'    creates in SC 5.20 a Weapon 'weapon_9mmAR'
+ - Weapon 'weapon_python' creates in SC 5.20 a Weapon 'weapon_357'
+ - Weapon 'weapon_saw'    creates in SC 5.20 a Weapon 'weapon_m249'
+
+
+--------------------------------------------------------------------|-------------------
+
+Ammo Index List
+---------------
+[ 0]  ---undefined---  // --- undefined ---
+[ 1]  'health'         // used by 'weapon_medkit'
+[ 2]  '9mm'            // used by 'weapon_9mmhandgun', 'weapon_9mmAR', 'weapon_uzi'
+[ 3]  '357'            // used by 'weapon_357', 'weapon_eagle'
+[ 4]  'buckshot'       // used by 'weapon_shotgun'
+[ 5]  'bolts'          // used by 'weapon_crossbow' 
+[ 6]  '556'            // used by 'weapon_m16', 'weapon_m249', 'weapon_minigun'
+[ 7]  'ARgrenades'     // used by 'weapon_m16' (secondary ammo)
+[ 8]  'rockets'        // used by 'weapon_rpg'
+[ 9]  'uranium'        // used by 'weapon_displacer', 'weapon_egon', 'weapon_gauss'
+[10]  'Hornets'        // used by 'weapon_hornetgun'
+[11]  'Hand Grenade'   // used by 'weapon_handgrenade'
+[12]  'Satchel Charge' // used by 'weapon_satchel'
+[13]  'Trip Mine'      // used by 'weapon_tripmine'
+[14]  'Snarks'         // used by 'weapon_snark'
+[15]  'm40a1'          // used by 'weapon_sniperrifle'
+[16]  'sporeclip'      // used by 'weapon_sporelauncher'
+[17]  'shock charges'  // used by 'weapon_shockrifle'
+
+Notes:
+ - Ammo '762' creates in SC 5.20 Ammo 'm40a1'
+ - Ammo of sniper rifle is in SC 5.20 now ammo 'm40a1'.
+ - Weapon 'weapon_clock'  creates in SC 5.20 a Weapon 'weapon_9mmhandgun'
+ - Weapon 'weapon_mp5'    creates in SC 5.20 a Weapon 'weapon_9mmAR'
+ - Weapon 'weapon_python' creates in SC 5.20 a Weapon 'weapon_357'
+ - Weapon 'weapon_saw'    creates in SC 5.20 a Weapon 'weapon_m249'
