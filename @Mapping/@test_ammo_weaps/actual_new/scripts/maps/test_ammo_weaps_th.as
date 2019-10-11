@@ -1,72 +1,89 @@
 /*
-* |==============================================================================|
-* | T E S T   A M M O   &   W E A P O N S   [standalone version]                 |
-* | Author: Neo (Discord: NEO) Version: V1.10                                    |
-* | License: This code is protected and licensed with Creative Commons 3.0 - NC  |
-* | (refer to https://creativecommons.org/licenses/by-nc/3.0/de/deed.en)         |
-* |==============================================================================|
-* | This map script is for testing and analysis of weapon ammo indexes           |
-* |==============================================================================|
-* | Map script install instructions:                                             |
-* |------------------------------------------------------------------------------|
-* | 1. Extract the files 'maps/test_ammo_weaps.bsp'                              |
-* |                  and 'scripts/maps/test_ammo_weaps.as.as'                    |
-* |                   to 'svencoop_addon/...'.                                   |
-* |------------------------------------------------------------------------------|
-* | 2. Start Sven Co-op Client and enter in console for start:                   |
-* |                                                                              |
-* |   map test_ammo_weaps                                                        |
-* |==============================================================================|
-* | Included are the following say chat commands                                 |
-* |------------------------------------------------------------------------------|
-* | /help         : help with available say chat commands                        |
-* | /giveall      : give all weapons\n");                                        |
-* | /dropall      : remove all weapons\n");                                      |
-* | /equip  ????? : Equip item                                                   |
-* | /equipedweaps : show data of equiped weapons                                 |
-* | /extraweaps   : equip weapon_clock, weapon_mp5, weapon_python and weapon_saw |
-* | /ammodefs     : show generic known ammo definitions in SC                    |
-* | /customweap 'weapon_???' : show data of equiped custom weapon (equip 1st !)  |
-* | /customammo '?????'  : show custom ammo definition (need weeapon/ammo addon) |
-* |==============================================================================|
+* |==================================================================================|
+* | T E S T   A M M O   &   W E A P O N S  (with hunger weaps)  [standalone version] |
+* | Author: Neo (Discord: NEO) Version: V1.10                                        |
+* | License: This code is protected and licensed with Creative Commons 3.0 - NC      |
+* | (refer to https://creativecommons.org/licenses/by-nc/3.0/de/deed.en)             |
+* |==================================================================================|
+* | This map script is for testing and analysis of weapon ammo indexes               |
+* |==================================================================================|
+* | Map script install instructions:                                                 |
+* |----------------------------------------------------------------------------------|
+* | 1. Extract the files 'maps/test_ammo_weaps.bsp'                                  |
+* |                  and 'scripts/maps/test_ammo_weaps.as.as'                        |
+* |                   to 'svencoop_addon/...'.                                       |
+* |----------------------------------------------------------------------------------|
+* | 2. Start Sven Co-op Client and enter in console for start:                       |
+* |                                                                                  |
+* |   map test_ammo_weaps                                                            |
+* |==================================================================================|
+* | Included are the following say chat commands                                     |
+* |----------------------------------------------------------------------------------|
+* | /help         : help with available say chat commands                            |
+* | /giveall      : give all weapons\n");                                            |
+* | /dropall      : remove all weapons\n");                                          |
+* | /equip  ????? : Equip item                                                       |
+* | /equipedweaps : show data of equiped weapons                                     |
+* | /extraweaps   : equip weapon_clock, weapon_mp5, weapon_python and weapon_saw     |
+* | /ammodefs     : show generic known ammo definitions in SC                        |
+* | /customweap 'weapon_???' : show data of equiped custom weapon (equip 1st !)      |
+* | /customammo '?????'  : show custom ammo definition (need weeapon/ammo addon)     |
+* |==================================================================================|
 */
 
 
+#include "hunger/th_weapons"
+
+
+void MapInit()
+{
+	THWeaponSawedoff::Register();
+	THWeaponM16A1::Register();
+	THWeaponM1911::Register();
+	THWeaponThompson::Register();
+	THWeaponM14::Register();
+	THWeaponTeslagun::Register();
+	THWeaponGreasegun::Register();
+	THWeaponSpanner::Register();
+}
+
+
 const array<string> TEST_AMMO_WEAPON_NAMES = {
-	"weapon_medkit",	"weapon_9mmhandgun", "weapon_9mmAR", "weapon_uzi", "weapon_glock", "weapon_mp5",
-	"weapon_357", "weapon_eagle", "weapon_python",
-	"weapon_shotgun",
+	"weapon_sawedoff",    "weapon_shotgun",
+	"weapon_m16",         "weapon_m16a1", "weapon_m249",     "weapon_minigun", "weapon_saw",
+	"weapon_9mmhandgun",  "weapon_9mmAR", "weapon_colt1911", "weapon_glock",
+	"weapon_greasegun",   "weapon_mp5",   "weapon_tommygun", "weapon_uzi",
+	"weapon_sniperrifle", "weapon_m14",
+	"weapon_displacer",   "weapon_egon",  "weapon_gauss",    "weapon_teslagun",
+	"weapon_medkit",	"weapon_357",         "weapon_eagle", "weapon_python",
 	"weapon_crossbow",
-	"weapon_m16", "weapon_m249", "weapon_minigun", "weapon_saw",
 	"weapon_rpg",
-	"weapon_displacer", "weapon_egon", "weapon_gauss",
 	"weapon_hornetgun",
 	"weapon_handgrenade",
 	"weapon_satchel",
 	"weapon_tripmine",
 	"weapon_snark",
-	"weapon_sniperrifle",
 	"weapon_sporelauncher",
 	"weapon_shockrifle"
 };
 
 
 const array<string> TEST_AMMO_TYPE_NAMES = {
-	"health"
-	"9mm",
-	"357",
 	"buckshot",
-	"bolts",
 	"556",
+	"9mm",
+	"m40a1",
+	"uranium",
+	"health"
+	"357",
+	"bolts",
 	"ARgrenades",
 	"rockets",
-	"uranium",
 	"Hornets",
 	"Hand Grenade",
 	"Satchel Charge",
 	"Trip Mine",
 	"Snarks",
-	"m40a1",
 	"sporeclip",
 	"shock charges"
 };

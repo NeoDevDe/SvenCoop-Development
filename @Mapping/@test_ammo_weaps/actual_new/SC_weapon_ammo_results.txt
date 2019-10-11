@@ -54,7 +54,7 @@ Notes:
 --------------------------------------------------------------------|-------------------
 
 Ammo Index List
----------------
+===============
 [ 0]  ---undefined---  // --- undefined ---
 [ 1]  'health'         // used by 'weapon_medkit'
 [ 2]  '9mm'            // used by 'weapon_9mmhandgun', 'weapon_9mmAR', 'weapon_uzi'

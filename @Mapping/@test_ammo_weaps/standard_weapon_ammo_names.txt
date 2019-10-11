@@ -1,0 +1,46 @@
+weapon_357, weapon_python
+weapon_9mmAR, weapon_9mmar, weapon_mp5
+weapon_9mmhandgun, weapon_glock
+weapon_crossbow
+weapon_crowbar
+weapon_displacer 
+weapon_eagle
+weapon_egon 
+weapon_gauss 
+weapon_grapple 
+weapon_handgrenade
+weapon_hornetgun 
+weapon_m16
+weapon_m249, weapon_saw
+weapon_medkit 
+weapon_minigun 
+weapon_pipewrench 
+weapon_rpg
+weapon_satchel 
+weapon_shockrifle 
+weapon_shotgun
+weapon_snark 
+weapon_sniperrifle
+weapon_sporelauncher
+weapon_tripmine 
+weapon_uzi
+weapon_uziakimbo
+
+ammo_357
+ammo_556
+ammo_556clip
+ammo_762
+ammo_9mmAR, ammo_mp5clip
+ammo_9mmbox
+ammo_9mmclip
+ammo_ARgrenades, ammo_mp5grenades
+ammo_buckshot
+ammo_crossbow
+ammo_egonclip 
+ammo_gaussclip 
+ammo_glockclip
+ammo_medkit
+ammo_rpgclip
+ammo_spore
+ammo_sporeclip
+ammo_uziclip

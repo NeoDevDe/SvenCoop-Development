@@ -5,9 +5,9 @@ Based on code modifications by Sean 'Zoner' Cavanaugh (3.4)
 Based on Valve's version, modified with permission.
 Submit detailed bug reports to http://forums.svencoop.com
 -----  BEGIN  hlcsg -----
-Command line: "D:/STEAM/steamapps/common/Sven Co-op SDK/mapping/compilers/SC-CSG_x64.exe" "D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps" 
-Arguments: "D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps" 
-Entering D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps.map
+Command line: "D:/STEAM/steamapps/common/Sven Co-op SDK/mapping/compilers/SC-CSG_x64.exe" "D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps_th" 
+Arguments: "D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps_th" 
+Entering D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps_th.map
 
 Current hlcsg Settings
 Name                 |  Setting  |  Default
@@ -45,7 +45,7 @@ Wadinclude list :
 [zhlt.wad]
 
 CreateBrush:
- (0.01 seconds)
+ (0.00 seconds)
 CSGBrush:
  (0.00 seconds)
 
@@ -71,8 +71,8 @@ Based on code modifications by Sean 'Zoner' Cavanaugh (3.4)
 Based on Valve's version, modified with permission.
 Submit detailed bug reports to http://forums.svencoop.com
 -----  BEGIN  hlbsp -----
-Command line: "D:/STEAM/steamapps/common/Sven Co-op SDK/mapping/compilers/SC-BSP_x64.exe" "D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps" 
-Arguments: "D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps" 
+Command line: "D:/STEAM/steamapps/common/Sven Co-op SDK/mapping/compilers/SC-BSP_x64.exe" "D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps_th" 
+Arguments: "D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps_th" 
 
 Current hlbsp Settings
 Name               |  Setting  |  Default
@@ -100,7 +100,7 @@ remove hull 2       [     off ] [     off ]
 
 
 SolidBSP [hull 0] 25 (0.00 seconds)
-BSP generation successful, writing portal file 'D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps.prt'
+BSP generation successful, writing portal file 'D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps_th.prt'
 SolidBSP [hull 1] 29 (0.00 seconds)
 SolidBSP [hull 2] 29 (0.00 seconds)
 SolidBSP [hull 3] 29 (0.00 seconds)
@@ -110,7 +110,7 @@ Reduced 3 texdatas to 3 (136 bytes to 136)
 Reduced 96 planes to 20
 FixBrinks:
 Increased 18 clipnodes to 18.
-0.03 seconds elapsed
+0.02 seconds elapsed
 
 -----   END   hlbsp -----
 
@@ -123,8 +123,8 @@ Based on code modifications by Sean 'Zoner' Cavanaugh (3.4)
 Based on Valve's version, modified with permission.
 Submit detailed bug reports to http://forums.svencoop.com
 -----  BEGIN  hlvis -----
-Command line: "D:/STEAM/steamapps/common/Sven Co-op SDK/mapping/compilers/SC-VIS_x64.exe" "D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps" 
-Arguments: "D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps" 
+Command line: "D:/STEAM/steamapps/common/Sven Co-op SDK/mapping/compilers/SC-VIS_x64.exe" "D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps_th" 
+Arguments: "D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps_th" 
    1 portalleafs
    0 numportals
 
@@ -164,8 +164,8 @@ Based on code modifications by Sean 'Zoner' Cavanaugh (3.4)
 Based on Valve's version, modified with permission.
 Submit detailed bug reports to http://forums.svencoop.com
 -----  BEGIN  hlrad -----
-Command line: "D:/STEAM/steamapps/common/Sven Co-op SDK/mapping/compilers/SC-RAD_x64.exe" "D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps" 
-Arguments: "D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps" 
+Command line: "D:/STEAM/steamapps/common/Sven Co-op SDK/mapping/compilers/SC-RAD_x64.exe" "D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps_th" 
+Arguments: "D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps_th" 
 
 -= Current hlrad Settings =-
 Name                | Setting             | Default
@@ -234,7 +234,7 @@ wall bleeding fix    [                on ] [                on ]
 
 
 Load Textures:
-Using Wadfile: D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps.wa_
+Using Wadfile: D:\STEAM\steamapps\common\Sven Co-op\svencoop_addon\maps\test_ammo_weaps_th.wa_
 3 textures referenced
 Reading texlights from 'D:\STEAM\steamapps\common\Sven Co-op SDK\mapping\compilers\lights.rad'
 0 opaque models
@@ -255,7 +255,7 @@ visibility matrix   :   0.0 megs
 MakeScales:
  (0.01 seconds)
 Transfer Lists :       56862 :    56.86k transfers
-       Indices :        1944 :     1.90k bytes
+       Indices :        1728 :     1.69k bytes
           Data :      114534 :   111.85k bytes
 Bounce 1 GatherLight:
  (0.00 seconds)
@@ -279,7 +279,7 @@ AddPatchLights:
  (0.02 seconds)
 FinalLightFace:
  (0.00 seconds)
-0.16 seconds elapsed
+0.21 seconds elapsed
 
 -----   END   hlrad -----
 
