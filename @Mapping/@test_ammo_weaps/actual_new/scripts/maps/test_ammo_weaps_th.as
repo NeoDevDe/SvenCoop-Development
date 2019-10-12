@@ -214,10 +214,14 @@ final class TestAmmoWeaps
 			g_PlayerFuncs.SayText(plr, "\n");
 			g_PlayerFuncs.SayText(plr, "Show Ammo Definition List\n");
 			g_PlayerFuncs.SayText(plr, "=========================\n");
+
+			// NOTE: function 'g_PlayerFuncs.GetAmmoIndex('<ammo name>') is bugged !
+			// It works correctly, if no custom entites are registered. After registering
+			// of TH weapons, this function does not return for all valid ammo type a valid index.
+			// But with command '/giveall' and '/equipedweaps' all ammo types with indexes will be displayed.
 			for(uint i = 0; i < TEST_AMMO_TYPE_NAMES.length(); i++)
 				if(g_PlayerFuncs.GetAmmoIndex(TEST_AMMO_TYPE_NAMES[i]) >= 0)
 					g_PlayerFuncs.SayText(plr,	"idx = " + g_PlayerFuncs.GetAmmoIndex(TEST_AMMO_TYPE_NAMES[i]) + " / Ammo name = '" + TEST_AMMO_TYPE_NAMES[i] + "'\n");
-
 			pParams.ShouldHide = true;
 			return HOOK_HANDLED;
 		}

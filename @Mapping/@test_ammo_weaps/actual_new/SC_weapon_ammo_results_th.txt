@@ -89,3 +89,11 @@ Notes:
  - Weapon 'weapon_mp5'    creates in SC 5.20 a Weapon 'weapon_9mmAR'
  - Weapon 'weapon_python' creates in SC 5.20 a Weapon 'weapon_357'
  - Weapon 'weapon_saw'    creates in SC 5.20 a Weapon 'weapon_m249'
+
+
+Identified SC server AS function Bugs:
+======================================
+NOTE: function 'g_PlayerFuncs.GetAmmoIndex('<ammo name>') is bugged !
+It works correctly, if no custom entites are registered. After registering
+of TH weapons, this function does not return for all valid ammo type a valid index.
+But with command '/giveall' and '/equipedweaps' all ammo types with indexes will be displayed.

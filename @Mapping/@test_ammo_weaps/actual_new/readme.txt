@@ -51,3 +51,10 @@ Test Ammo & Weapons - usage of custom TH weapons in map editor:
 -----------------------------------------------------------------------------
 Use 'hunger.fgd' in your favorite map editor to add TH weapons in a map.
 
+
+Identified SC server AS function Bugs which happens with registered TH weapons:
+-------------------------------------------------------------------------------
+NOTE: function 'g_PlayerFuncs.GetAmmoIndex('<ammo name>') is bugged !
+It works correctly, if no custom entites are registered. After registering
+of TH weapons, this function does not return for all valid ammo type a valid index.
+But with command '/giveall' and '/equipedweaps' all ammo types with indexes will be displayed.
