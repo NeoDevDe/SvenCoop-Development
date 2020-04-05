@@ -1,7 +1,7 @@
 /*
 * |==============================================================================|
 * | O P P O S I N G  F O R C E   N I G H T  V I S I O N   [plugin version]       |
-* | Author:  Neo (Discord: NEO) Version: V1.80 / © 2020                          |
+* | Author:  Neo (Discord: NEO) Version: V1.81 / © 2020                          |
 * | Credits: NERO (Night Vision initial basic plugin script version)             |
 * | License: This code is protected and licensed with Creative Commons 3.0 - NC  |
 * | (refer to https://creativecommons.org/licenses/by-nc/3.0/de/deed.en)         |

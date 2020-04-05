@@ -1,7 +1,7 @@
 /*
 * |====================================================================================|
 * | O P P O S I N G  F O R C E   N I G H T  V I S I O N   [#include version]           |
-* | Author:  Neo (Discord: NEO) Version: V1.80 / © 2020                                |
+* | Author:  Neo (Discord: NEO) Version: V1.81 / © 2020                                |
 * | Credits: NERO (Night Vision initial basic plugin script version)                   |
 * | License: This code is protected and licensed with Creative Commons 3.0 - NC        |
 * | (refer to https://creativecommons.org/licenses/by-nc/3.0/de/deed.en)               |
@@ -35,7 +35,8 @@
 * | - To disable call the function:   NightVision::g_NightVision.Disable();            |
 * | - To check the status use:        if(NightVision::g_NightVision.IsEnabled()) {}    |
 * | - To change the night vision color:                                                |
-* |                          NightVision::g_NightVision.NVsetColor( Vector(0,255,0) ); |
+* |                       NightVision::g_NightVisionNVsetColor( Vector(0,255,0) );     |
+* |               - or -  NightVision::g_NightVision.NVsetColor( NightVision::GREEN ); |
 * |====================================================================================|
 * | NightVision say chat commands: (if say chat commands are activated)                |
 * |------------------------------------------------------------------------------------|
@@ -53,6 +54,26 @@
 
 namespace NightVision
 {
+// Predefine Colors
+Vector NV_DEFAULT	= Vector(  0,255,  0);
+Vector RED    		= Vector(255,  0,  0);
+Vector RED2    		= Vector(255, 64, 64);
+Vector GREEN  		= Vector(  0,255,  0);
+Vector GREEN2  		= Vector(128,255,  0);
+Vector GREEN_DARK	= Vector( 64,255,  0);
+Vector BLUE			= Vector(  0,  0,255);
+Vector CYAN			= Vector(  0,160,192);
+Vector YELLOW		= Vector(255,255,  0);
+Vector YELLOW2		= Vector(255,216,  0);
+Vector ORANGE		= Vector(255,127,  0);
+Vector ORANGE2		= Vector(255,170,  0);
+Vector PURPLE		= Vector(127,  0,255);
+Vector PINK			= Vector(255,  0,127);
+Vector TEAL			= Vector(  0,255,255);
+Vector WHITE		= Vector(255,255,255);
+Vector BLACK		= Vector(  0,  0,  0);
+Vector GRAY			= Vector(127,127,127);
+
 
 NightVision@ g_NightVision = @NightVision();
 

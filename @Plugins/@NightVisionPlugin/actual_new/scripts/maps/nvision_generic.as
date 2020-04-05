@@ -1,7 +1,7 @@
 /*
 * |======================================================================================|
 * | O P P O S I N G  F O R C E   N I G H T  V I S I O N   [standalone version]           |
-* | Author:  Neo (Discord: NEO) Version: V1.80 / © 2020                                  |
+* | Author:  Neo (Discord: NEO) Version: V1.81 / © 2020                                  |
 * | License: This code is protected and licensed with Creative Commons 3.0 - NC          |
 * | (refer to https://creativecommons.org/licenses/by-nc/3.0/de/deed.en)                 |
 * |======================================================================================|
@@ -28,6 +28,7 @@
 * | Initialization of night vision:  NightVision::g_NightVision.OnMapInit();             |
 * | Init. of nv with chat commands:  NightVision::g_NightVision.OnMapInit(true, true);   |
 * | Change night vision color: NightVision::g_NightVision.NVsetColor( Vector(0,255,0) ); |
+* |                 - or -  NightVision::g_NightVision.NVsetColor( NightVision::GREEN ); |
 * |======================================================================================|
 * | NightVision say chat commands: (if say chat commands are activated)                  |
 * |--------------------------------------------------------------------------------------|
