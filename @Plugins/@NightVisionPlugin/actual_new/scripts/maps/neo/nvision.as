@@ -35,8 +35,8 @@
 * | - To disable call the function:   NightVision::g_NightVision.Disable();            |
 * | - To check the status use:        if(NightVision::g_NightVision.IsEnabled()) {}    |
 * | - To change the night vision color:                                                |
-* |                       NightVision::g_NightVisionNVsetColor( Vector(0,255,0) );     |
-* |               - or -  NightVision::g_NightVision.NVsetColor( NightVision::GREEN ); |
+* |                      NightVision::g_NightVision.NVsetColor( Vector(0,255,0) );     |
+* |              - or -  NightVision::g_NightVision.NVsetColor( NightVision::GREEN );  |
 * |====================================================================================|
 * | NightVision say chat commands: (if say chat commands are activated)                |
 * |------------------------------------------------------------------------------------|
@@ -88,8 +88,7 @@ final class NightVision
 {
 	private string m_szSndHudNV  = "player/hud_nightvision.wav";
 	private string m_szSndFLight = "items/flashlight2.wav";
-	private Vector m_vColor_default( 0, 255, 0 );
-	private Vector m_vColor = m_vColor_default;
+	private Vector m_vColor = NV_DEFAULT;
 	private float  m_flVolume = 0.8f;
 	private int    m_iRadius = 42;
 	private int    m_iLife	= 2;
@@ -246,7 +245,7 @@ final class NightVision
 		Think(); // switch off night vision effect for all
 	}
 
-	bool NVsetColor(Vector vColor = m_vColor_default)
+	bool NVsetColor(Vector vColor = NV_DEFAULT)
 	{
 		if(vColor.x < 0 or vColor.x > 255 or vColor.y < 0 or vColor.y > 255 or vColor.z < 0 or vColor.z > 255)
 			return false;

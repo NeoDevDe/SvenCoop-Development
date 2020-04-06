@@ -28,7 +28,6 @@
 * | Initialization of night vision:  NightVision::g_NightVision.OnMapInit();             |
 * | Init. of nv with chat commands:  NightVision::g_NightVision.OnMapInit(true, true);   |
 * | Change night vision color: NightVision::g_NightVision.NVsetColor( Vector(0,255,0) ); |
-* |                 - or -  NightVision::g_NightVision.NVsetColor( NightVision::GREEN ); |
 * |======================================================================================|
 * | NightVision say chat commands: (if say chat commands are activated)                  |
 * |--------------------------------------------------------------------------------------|

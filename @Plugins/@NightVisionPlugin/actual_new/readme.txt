@@ -3,11 +3,11 @@ Sven Co-op - Opposing Force NIGHT VISION - Plugin/Map Scripts
 
 General Information:
 --------------------
-Date:	 April, 5th, 2020
+Date:	 April, 6th, 2020
 Author:	 Neo (Dicord: 'Sven Co-op' Server - Neo)
 	 NERO (Night Vision initial basic plugin script version)
 Title:	 Opposing Force Night Vision plugin/map Script for Sven Co-op V5.22
-Version: V1.80 © 2020
+Version: V1.90 © 2020
 License: This code is protected and licensed with Creative Commons 3.0 - NC
 	 (refer to https://creativecommons.org/licenses/by-nc/3.0/de/deed.en)
 
@@ -62,8 +62,8 @@ Opposing Force Night Vision - installing and usage instructions
 
    3. Add optional to you server configuration file at 'svencoop/server/server.cfg'
       additional lines to enable/disable the Night Vision functionality:
-        => To enable  add:  as_command nvis.nvision 1
-        => To disable add:  as_command nvis.nvision 0
+        => To enable  add:  as_command nvis.nvisionp 1
+        => To disable add:  as_command nvis.nvisionp 0
    
 
 Usage of NightVision
@@ -82,6 +82,7 @@ Note to additional usable NightVision functions
  - To disable call the function:     NightVision::g_NightVision.Disable();
  - To check the status use:          if(NightVision::g_NightVision.IsEnabled()) {}
  - To change the night vision color: NightVision::g_NightVision.NVsetColor( Vector(0,255,0) );
+|                            - or -  NightVision::g_NightVision.NVsetColor( NightVision::GREEN );
 
 NightVision say chat commands: (if say chat commands are activated)
 -------------------------------------------------------------------
