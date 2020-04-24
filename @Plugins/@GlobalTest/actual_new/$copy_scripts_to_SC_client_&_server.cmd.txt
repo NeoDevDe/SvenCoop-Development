@@ -1,0 +1,6 @@
+@echo "Copy: Night Vision Plugin Scripts to SC client & server ?"
+@echo on
+@pause
+@xcopy /s /y "D:\Users\MAGX\Development Projects\SvenCoop\Development\@Plugins\@NightVisionPlugin\actual_new\scripts\*.as" "D:\Steam\steamapps\common\Sven Co-op\svencoop_addon\scripts\"
+@xcopy /s /y "D:\Users\MAGX\Development Projects\SvenCoop\Development\@Plugins\@NightVisionPlugin\actual_new\scripts\*.as" "D:\Steam\steamapps\common\Sven Co-op Dedicated Server\svencoop_addon\scripts\"
+@pause

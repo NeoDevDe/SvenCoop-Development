@@ -1,0 +1,15 @@
+//========================================
+//
+//	This file lists all plugins that are loaded by the game
+//	Plugins use Angelscript
+//
+//========================================
+"plugins"
+{
+	"plugin"
+	{
+		"name" "GlobalTest"
+		"script" "globaltest"
+		"concommandns" "gt"
+	}
+}
