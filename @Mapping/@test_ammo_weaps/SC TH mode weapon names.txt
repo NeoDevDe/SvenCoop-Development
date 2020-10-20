@@ -1,8 +1,0 @@
-weapon_colt1911
-weapon_greasegun
-weapon_m14
-weapon_m16a1
-weapon_sawedoff
-weapon_spanner
-weapon_teslagun
-weapon_tommygun

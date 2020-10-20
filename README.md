@@ -1,2 +1,1 @@
-This repository project includes all my developed Sven Co-op Add-Ons, which are developed in AngelScript.
-Additional you'll find a huge collection of my most used tools.
+This repository project will includes in near future lots of new developed Sven Co-op Add-Ons, which are developed in AngelScript.
